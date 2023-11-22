@@ -18,14 +18,15 @@ function Address(){
 }
 
   return (
-<div>
-{/* <Name/> */}
-<Suspense fallback={<h2>Loading...</h2>}>
+    <>
+<Name/> 
+<Suspense fallback={<h2>Loading a data...</h2>}>
 <Name/>
 <Address/>
 </Suspense>
 
-</div>
+    </>
+
   );
 }
 
